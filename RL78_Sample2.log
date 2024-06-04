@@ -1,0 +1,24 @@
+;					2024/04/17 13:20:47;
+;   From:C:\Users\h_umemura\My Documents\Applilet EZ PL for RL78\Project\RL78_Sample2\RL78_Sample2.loc
+;     To:C:\Users\h_umemura\My Documents\Applilet EZ PL for RL78\Project\RL78_Sample2\PANEL.inc
+;
+;Input
+I_19	DGIN	L,P0.0,0
+;Process
+0517	 OFF	R
+0715	 OFF	R
+0716	  ON	R
+0718	BCNT	UL2R4,9
+1015	IC74HC4511	L7R7
+1422	 OFF	R
+;Output
+O_15	 DGO	H,P3.0
+O_16	 DGO	H,P3.1
+O_17	 DGO	H,P3.2
+O_18	 DGO	H,P3.3
+O_19	 DGO	H,P5.1
+O_20	 DGO	H,P5.2
+O_21	 DGO	H,P5.3
+O_22	 DGO	H,P5.4
+
+ê≥èÌÇ…èIóπÇµÇ‹ÇµÇΩÅB

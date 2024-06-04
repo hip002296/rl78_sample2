@@ -1,0 +1,197 @@
+****src\common.c
+v2 
+:1717477808
+#1
+F "__DI" N I!1 T!2 ?18-2 
+T "void" KBV I!2 0x0 
+F "__EI" N I!3 T!2 ?19-2 
+F "__halt" N I!4 T!2 ?20-2 
+F "__stop" N I!5 T!2 ?21-2 
+F "__brk" N I!6 T!2 ?22-2 
+F "__nop" N I!7 T!2 ?23-2 101-1 
+F "__rolb" N I!8 T!9 ?25-2 P!10 P!11 
+T "unsigned char" KBU I!9 0x1 
+V "" N I!10 O!8 T!9 .1 0x1 
+V "" N I!11 O!8 T!9 .1 0x1 
+F "__rorb" N I!12 T!9 ?26-2 P!13 P!14 
+V "" N I!13 O!12 T!9 .1 0x1 
+V "" N I!14 O!12 T!9 .1 0x1 
+F "__rolw" N I!15 T!16 ?27-2 P!17 P!18 
+T "unsigned int" KBU I!16 0x2 
+V "" N I!17 O!15 T!16 .2 0x2 
+V "" N I!18 O!15 T!9 .1 0x1 
+F "__rorw" N I!19 T!16 ?28-2 P!20 P!21 
+V "" N I!20 O!19 T!16 .2 0x2 
+V "" N I!21 O!19 T!9 .1 0x1 
+F "__mulu" N I!22 T!16 ?30-2 P!23 P!24 
+V "" N I!23 O!22 T!9 .1 0x1 
+V "" N I!24 O!22 T!9 .1 0x1 
+F "__mului" N I!25 T!26 ?32-2 P!27 P!28 
+T "unsigned long" KBU I!26 0x4 
+V "" N I!27 O!25 T!16 .2 0x2 
+V "" N I!28 O!25 T!16 .2 0x2 
+F "__mulsi" N I!29 T!30 ?33-2 P!31 P!33 
+T "long" KBS I!30 0x4 
+V "" N I!31 O!29 T!32 .2 0x2 
+T "int" KBS I!32 0x2 
+V "" N I!33 O!29 T!32 .2 0x2 
+F "_COM_mulul" F I!34 T!35 ?42-2 P!36 P!37 
+T "unsigned long long" KBU I!35 0x8 
+V "" N I!36 O!34 T!26 .2 0x4 
+V "" N I!37 O!34 T!26 .2 0x4 
+F "_COM_mulsl" F I!38 T!39 ?43-2 P!40 P!41 
+T "long long" KBS I!39 0x8 
+V "" N I!40 O!38 T!30 .2 0x4 
+V "" N I!41 O!38 T!30 .2 0x4 
+F "_COM_divui" F I!42 T!16 ?48-2 P!43 P!44 
+V "" N I!43 O!42 T!16 .2 0x2 
+V "" N I!44 O!42 T!9 .1 0x1 
+F "_COM_divul" F I!45 T!26 ?49-2 P!46 P!47 
+V "" N I!46 O!45 T!26 .2 0x4 
+V "" N I!47 O!45 T!16 .2 0x2 
+F "_COM_remui" F I!48 T!9 ?53-2 P!49 P!50 
+V "" N I!49 O!48 T!16 .2 0x2 
+V "" N I!50 O!48 T!9 .1 0x1 
+F "_COM_remul" F I!51 T!16 ?54-2 P!52 P!53 
+V "" N I!52 O!51 T!26 .2 0x4 
+V "" N I!53 O!51 T!16 .2 0x2 
+F "_COM_macui" F I!54 T!26 ?58-2 P!55 P!56 P!57 
+V "" N I!55 O!54 T!16 .2 0x2 
+V "" N I!56 O!54 T!16 .2 0x2 
+V "" N I!57 O!54 T!26 .2 0x4 
+F "_COM_macsi" F I!58 T!30 ?59-2 P!59 P!60 P!61 
+V "" N I!59 O!58 T!32 .2 0x2 
+V "" N I!60 O!58 T!32 .2 0x2 
+V "" N I!61 O!58 T!30 .2 0x4 
+F "__get_psw" N I!62 T!9 ?63-2 
+F "__set_psw" N I!63 T!2 ?64-2 P!64 
+V "" N I!64 O!63 T!9 .1 0x1 
+F "__set1" N I!65 T!2 ?66-2 P!66 P!68 
+V "" N I!66 O!65 T!67 .2 0x2 
+T "" KP I!67 T!9 0x2 
+V "" N I!68 O!65 T!9 .1 0x1 
+F "__clr1" N I!69 T!2 ?67-2 P!70 P!71 
+V "" N I!70 O!69 T!67 .2 0x2 
+V "" N I!71 O!69 T!9 .1 0x1 
+F "__not1" N I!72 T!2 ?68-2 P!73 P!74 
+V "" N I!73 O!72 T!67 .2 0x2 
+V "" N I!74 O!72 T!9 .1 0x1 
+T "" KS I!75 !39-4 0x1 VM!76 VM!77 VM!78 VM!79 VM!80 VM!81 VM!82 VM!83 
+V "no0" - I!76 O!75 T!9 !40-4 .1 0x1 BO0 BIS1 
+V "no1" - I!77 O!75 T!9 !41-4 .1 0x1 BO1 BIS1 
+V "no2" - I!78 O!75 T!9 !42-4 .1 0x1 BO2 BIS1 
+V "no3" - I!79 O!75 T!9 !43-4 .1 0x1 BO3 BIS1 
+V "no4" - I!80 O!75 T!9 !44-4 .1 0x1 BO4 BIS1 
+V "no5" - I!81 O!75 T!9 !45-4 .1 0x1 BO5 BIS1 
+V "no6" - I!82 O!75 T!9 !46-4 .1 0x1 BO6 BIS1 
+V "no7" - I!83 O!75 T!9 !47-4 .1 0x1 BO7 BIS1 
+T "__bitf_T" KT I!84 T!75 !48-4 0x1 
+T "" KS I!85 !51-4 0x2 VM!86 VM!87 VM!88 VM!89 VM!90 VM!91 VM!92 VM!93 VM!94 VM!95 VM!96 VM!97 VM!98 VM!99 VM!100 VM!101 
+V "no0" - I!86 O!85 T!9 !52-4 .1 0x1 BO0 BIS1 
+V "no1" - I!87 O!85 T!9 !53-4 .1 0x1 BO1 BIS1 
+V "no2" - I!88 O!85 T!9 !54-4 .1 0x1 BO2 BIS1 
+V "no3" - I!89 O!85 T!9 !55-4 .1 0x1 BO3 BIS1 
+V "no4" - I!90 O!85 T!9 !56-4 .1 0x1 BO4 BIS1 
+V "no5" - I!91 O!85 T!9 !57-4 .1 0x1 BO5 BIS1 
+V "no6" - I!92 O!85 T!9 !58-4 .1 0x1 BO6 BIS1 
+V "no7" - I!93 O!85 T!9 !59-4 .1 0x1 BO7 BIS1 
+V "no8" - I!94 O!85 T!9 !60-4 .1 0x1 BO8 BIS1 
+V "no9" - I!95 O!85 T!9 !61-4 .1 0x1 BO9 BIS1 
+V "no10" - I!96 O!85 T!9 !62-4 .1 0x1 BO10 BIS1 
+V "no11" - I!97 O!85 T!9 !63-4 .1 0x1 BO11 BIS1 
+V "no12" - I!98 O!85 T!9 !64-4 .1 0x1 BO12 BIS1 
+V "no13" - I!99 O!85 T!9 !65-4 .1 0x1 BO13 BIS1 
+V "no14" - I!100 O!85 T!9 !66-4 .1 0x1 BO14 BIS1 
+V "no15" - I!101 O!85 T!9 !67-4 .1 0x1 BO15 BIS1 
+T "__bitf_T2" KT I!102 T!85 !68-4 0x2 
+T "LONG" KT I!103 T!30 !184-5 0x4 
+T "INT" KT I!104 T!32 !185-5 0x2 
+T "SHORT" KT I!105 T!106 !186-5 0x2 
+T "short" KBS I!106 0x2 
+T "CHAR" KT I!107 T!108 !187-5 0x1 
+T "char" KBCU I!108 0x1 
+T "ULONG" KT I!109 T!26 !188-5 0x4 
+T "UINT" KT I!110 T!16 !189-5 0x2 
+T "USHORT" KT I!111 T!112 !190-5 0x2 
+T "unsigned short" KBU I!112 0x2 
+T "UCHAR" KT I!113 T!9 !191-5 0x1 
+T "" KS I!114 !193-5 0x8 VM!115 VM!116 VM!117 VM!118 VM!119 VM!120 
+V "dtccr" - I!115 O!114 T!113 !194-5 .1 0x1 BO0 BIS8 
+V "dtbls" - I!116 O!114 T!113 !195-5 .1 0x1 BO8 BIS8 
+V "dtcct" - I!117 O!114 T!113 !196-5 .1 0x1 BO16 BIS8 
+V "dtrld" - I!118 O!114 T!113 !197-5 .1 0x1 BO24 BIS8 
+V "dtsar" - I!119 O!114 T!111 !198-5 .2 0x2 BO32 BIS16 
+V "dtdar" - I!120 O!114 T!111 !199-5 .2 0x2 BO48 BIS16 
+T "ST_DTC_DATA" KT I!121 T!114 !200-5 0x8 
+V "fTx0Done" GE I!122 T!113 !56-1 ?206-5 .1 0x1 
+V "fTx6Done" GE I!123 T!113 !57-1 ?207-5 .1 0x1 
+V "fTm10ms" GE I!124 T!113 !58-1 ?208-5 .1 0x1 
+V "fTrg50ms" GE I!125 T!113 !59-1 ?209-5 .1 0x1 
+V "fTrg1s" GE I!126 T!113 !60-1 ?210-5 .1 0x1 
+V "fTrg10ms" GE I!127 T!113 !61-1 ?211-5 .1 0x1 
+F "MOV1_" F I!128 T!113 #73-1 !74,76-1-1 ?221-5 P!162 
+F "NOT1_" F I!130 T!113 #84-1 !85,87-1-1 ?222-5 P!164 
+F "WAIT" F I!132 T!2 #95-1 !96,103-1-1 ?224-5 P!166 
+F "BitMemGet" F I!134 T!113 #112-1 !113,124-1-1 ?225-5 P!171 P!172 
+T "" KP I!136 T!113 0x2 
+F "ByteMemGet" F I!138 T!113 #133-1 !134,139-1-1 ?226-5 P!178 P!179 
+F "BitMemSet" F I!141 T!2 #149-1 !150,161-1-1 ?227-5 P!184 P!185 P!186 
+F "ByteMemSet" F I!145 T!2 #171-1 !172,177-1-1 ?228-5 P!193 P!194 P!195 
+F "Port_Set" F I!149 T!2 #187-1 !188,204-1-1 ?229-5 P!200 P!201 P!202 
+F "Port_Get" F I!153 T!113 #213-1 !214,225-1-1 ?230-5 P!209 P!210 
+F "PORT_in" F I!156 T!113 ?231-5 P!157 
+V "" N I!157 O!156 T!113 .1 0x1 
+F "PORT_out" F I!158 T!2 ?232-5 P!159 P!160 
+V "" N I!159 O!158 T!113 .1 0x1 
+V "" N I!160 O!158 T!113 .1 0x1 
+V "Fin" N I!162 O!128 T!113 !73-1 75-1 .1 0x1 
+V "Fin" N I!164 O!130 T!113 !84-1 86-1 .1 0x1 
+V "count" N I!166 O!132 T!113 !95-1 97-1 .1 0x1 
+V "delay" N I!167 O!132 T!111 !97-1 #97-1 100-1 .2 0x2 
+V "i" N I!168 O!132 T!111 !98-1 #100-1 #100-1 100-1 100-1 .2 0x2 
+V "memp" N I!171 O!134 T!136 !112-1 120-1 .2 0x2 
+V "count" N I!172 O!134 T!113 !112-1 118-1 119-1 .1 0x1 
+V "bit_num" N I!173 O!134 T!113 !114-1 #119-1 121-1 .1 0x1 
+V "elem_num" N I!174 O!134 T!113 !115-1 #118-1 120-1 .1 0x1 
+V "work" N I!175 O!134 T!113 !116-1 #120-1 #121-1 #122-1 121-1 122-1 123-1 .1 0x1 
+V "memp" N I!178 O!138 T!136 !133-1 137-1 .2 0x2 
+V "count" N I!179 O!138 T!113 !133-1 137-1 .1 0x1 
+V "work" N I!180 O!138 T!113 !135-1 #137-1 138-1 .1 0x1 
+V "memp" N I!184 O!141 T!136 !149-1 159-1 160-1 .2 0x2 
+V "count" N I!185 O!141 T!113 !149-1 155-1 156-1 157-1 .1 0x1 
+V "value" N I!186 O!141 T!113 !149-1 156-1 .1 0x1 
+V "elem_num" N I!187 O!141 T!113 !151-1 #157-1 159-1 160-1 .1 0x1 
+V "mask" N I!188 O!141 T!113 !152-1 #155-1 159-1 .1 0x1 
+V "update" N I!189 O!141 T!113 !153-1 #156-1 160-1 .1 0x1 
+V "memp" N I!193 O!145 T!136 !171-1 175-1 .2 0x2 
+V "count" N I!194 O!145 T!113 !171-1 175-1 .1 0x1 
+V "value" N I!195 O!145 T!113 !171-1 176-1 .1 0x1 
+V "work" N I!196 O!145 T!136 !173-1 #175-1 176-1 .2 0x2 
+V "Port" N I!200 O!149 T!113 !187-1 194-1 .1 0x1 
+V "TermNum" N I!201 O!149 T!113 !187-1 197-1 .1 0x1 
+V "Val" N I!202 O!149 T!113 !187-1 191-1 198-1 .1 0x1 
+V "ucp_port" N I!203 O!149 T!204 !189-1 #193-1 #194-1 194-1 195-1 203-1 .2 0x2 
+T "" MOD"V" KP I!204 T!113 0x2 
+V "ucport" N I!205 O!149 T!113 !190-1 #195-1 #199-1 #201-1 199-1 201-1 203-1 .1 0x1 
+V "ucset" N I!206 O!149 T!113 !191-1 #191-1 #196-1 #197-1 197-1 199-1 201-1 .1 0x1 
+V "Port" N I!209 O!153 T!113 !213-1 220-1 .1 0x1 
+V "TermNum" N I!210 O!153 T!113 !213-1 222-1 .1 0x1 
+V "ucp_port" N I!211 O!153 T!204 !215-1 #219-1 #220-1 220-1 221-1 .2 0x2 
+V "ucport" N I!212 O!153 T!113 !216-1 #221-1 222-1 .1 0x1 
+V "ucret" N I!213 O!153 T!113 !217-1 #222-1 224-1 .1 0x1 
+****%CxSystemPath%\inc\builtin.h
+v2 
+:1717477808
+#2
+****include\sfr.h
+v2 
+:1717477808
+#3
+****include\iodefine.h
+v2 
+:1717477808
+#4
+****include\common.h
+v2 
+:1717477808
+#5

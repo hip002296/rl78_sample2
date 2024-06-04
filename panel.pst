@@ -1,0 +1,5 @@
+-cpu=S3
+-obj_path=".\obj\"
+-dev="C:\Program Files (x86)\Renesas Electronics\Applilet EZ PL for RL78 V2.20\Tools\BIN\..\..\Tools\DEV\DR5F1058A.DVF"
+-include="C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\inc",".\include"
+obj\panel.asm
