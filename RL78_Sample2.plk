@@ -1,0 +1,37 @@
+-SECURITY_ID=00000000000000000000
+-DEVICE="C:\Program Files (x86)\Renesas Electronics\Applilet EZ PL for RL78 V2.20\Tools\BIN\..\..\Tools\DEV\DR5F1058A.DVF"
+-NODEBug
+-NOOPtimize
+-OUtput="RL78_Sample2.abs"
+-LIBrary="C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\rl78nm4s.lib"
+-LIBrary="C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\rl78nm4r.lib"
+-LISt
+-SHow=ALL
+-AUTO_SECTION_LAYOUT
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-MEMory=High
+-NOLOgo
+-Total_size
+-Input="obj\cstart.obj"
+-Input="obj\opt_byte.obj"
+-Input="obj\main.obj"
+-Input="obj\common.obj"
+-Input="obj\timer.obj"
+-Input="obj\int.obj"
+-Input="obj\port.obj"
+-Input="obj\watchdogtimer.obj"
+-Input="obj\system.obj"
+-Input="obj\systeminit.obj"
+-Input="obj\panel.obj"
+-Input="obj\digitalio.obj"
+-Input="obj\counter.obj"
+-Input="obj\74hc.obj"
+-END
+-Input="RL78_Sample2.abs"
+-OUtput="RL78_Sample2.hex"
+-FOrm=Hexadecimal
+-BYte_count=10
+-NOMessage
+-EXIt

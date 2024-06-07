@@ -1,0 +1,883 @@
+Renesas Optimizing Linker (W3.06.00 )             17-Apr-2024 13:20:54
+
+*** Options ***
+
+-SUbcommand=RL78_Sample2.plk
+-SECURITY_ID=00000000000000000000
+-DEVICE="C:\Program Files (x86)\Renesas Electronics\Applilet EZ PL for RL78 V2.20\Tools\BIN\..\..\Tools\DEV\DR5F1058A.DVF"
+-NODEBug
+-NOOPtimize
+-OUtput="RL78_Sample2.abs"
+-LIBrary="C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\rl78nm4s.lib"
+-LIBrary="C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\rl78nm4r.lib"
+-LISt
+-SHow=ALL
+-AUTO_SECTION_LAYOUT
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-MEMory=High
+-NOLOgo
+-Total_size
+-Input="obj\cstart.obj"
+-Input="obj\opt_byte.obj"
+-Input="obj\main.obj"
+-Input="obj\common.obj"
+-Input="obj\timer.obj"
+-Input="obj\int.obj"
+-Input="obj\port.obj"
+-Input="obj\watchdogtimer.obj"
+-Input="obj\system.obj"
+-Input="obj\systeminit.obj"
+-Input="obj\panel.obj"
+-Input="obj\digitalio.obj"
+-Input="obj\counter.obj"
+-Input="obj\74hc.obj"
+-END
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.constf
+                                  00000080  00000080         0   2
+.sdata
+                                  00000080  00000080         0   2
+.data
+                                  00000082  00000092        11   2
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.text
+                                  000000ce  00000150        83   1
+.textf
+                                  00000151  00000620       4d0   1
+.RLIB
+                                  00000621  0000062e         e   1
+.text_AT10C0
+                                  000010c0  000010c3         4   1
+.const
+                                  00002000  0000200a         b   2
+.bss
+                                  000ff900  000ff90c         d   2
+.dataR
+                                  000ff90e  000ff91e        11   2
+.stack_bss
+                                  000ff920  000ffb1f       200   2
+.sbss
+                                  000ffe20  000ffe28         9   2
+.sdataR
+                                  000ffe2a  000ffe2a         0   2
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  00000227 Byte(s)
+ROMDATA SECTION:  000000aa Byte(s)
+PROGRAM SECTION:  00000565 Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+    STRUCT                                      SIZE
+      MEMBER                        ADDR        SIZE    INFO
+
+SECTION=.vect
+FILE=rlink_generates_02
+                                  00000000  0000007f        80
+
+SECTION=.data
+FILE=obj\panel.obj
+                                  00000082  00000090         f
+FILE=obj\74hc.obj
+                                  00000092  00000092         1
+
+SECTION=.option_byte
+FILE=obj\opt_byte.obj
+                                  000000c0  000000c3         4
+
+SECTION=.security_id
+FILE=rlink_generates_01
+                                  000000c4  000000cd         a
+
+SECTION=.text
+FILE=obj\cstart.obj
+                                  000000ce  00000120        53
+  _start
+                                  000000ce         0   none ,g         0
+  _exit
+                                  0000011f         0   none ,g         1
+FILE=obj\timer.obj
+                                  00000121  00000131        11
+  _MD_INTTM00
+                                  00000121        11   func ,g         0
+FILE=obj\int.obj
+                                  00000132  00000150        1f
+  _MD_INTP0
+                                  00000132         2   func ,g         0
+  _MD_INTP1
+                                  00000134         2   func ,g         0
+  _MD_INTP2
+                                  00000136         2   func ,g         0
+  _MD_INTP3
+                                  00000138         2   func ,g         0
+  _MD_INTP4
+                                  0000013a         2   func ,g         0
+  _MD_INTP5
+                                  0000013c         2   func ,g         0
+  _MD_INTP6
+                                  0000013e         2   func ,g         0
+  _MD_INTAD
+                                  00000140         9   func ,g         0
+  _MD_INTCMP0
+                                  00000149         2   func ,g         0
+  _MD_INTCMP1
+                                  0000014b         2   func ,g         0
+  _MD_INTDOC
+                                  0000014d         2   func ,g         0
+  _MD_INTIT
+                                  0000014f         2   func ,g         0
+
+SECTION=.textf
+FILE=obj\main.obj
+                                  00000151  00000166        16
+  _main
+                                  00000151         8   func ,g         1
+  _main_loop
+                                  00000159         e   func ,g         0
+FILE=obj\common.obj
+                                  00000167  0000020e        a8
+  _MOV1_
+                                  00000167         1   func ,g         0
+  _NOT1_
+                                  00000168         6   func ,g         0
+  _WAIT
+                                  0000016e         d   func ,g         0
+  _BitMemGet
+                                  0000017b        13   func ,g         3
+  __CommonCode@0
+                                  0000018e         d   func ,l         1
+  _ByteMemGet
+                                  0000019b         4   func ,g         3
+  _BitMemSet
+                                  0000019f        34   func ,g         3
+  __CommonCode@1
+                                  000001d3         9   func ,l         2
+  _ByteMemSet
+                                  000001dc         5   func ,g         4
+  _Port_Set
+                                  000001e1        1f   func ,g         1
+  _Port_Get
+                                  00000200         f   func ,g         1
+FILE=obj\timer.obj
+                                  0000020f  00000275        67
+  _TM00_Init
+                                  0000020f        3a   func ,g         1
+  _TM_10ms
+                                  00000249        2d   func ,g         1
+FILE=obj\int.obj
+                                  00000276  000002ca        55
+  _INT_Init
+                                  00000276        55   func ,g         1
+FILE=obj\port.obj
+                                  000002cb  00000311        47
+  _PORT_Init
+                                  000002cb        47   func ,g         1
+FILE=obj\watchdogtimer.obj
+                                  00000312  00000316         5
+  _WDT_Init
+                                  00000312         1   func ,g         1
+  _WDT_Reset
+                                  00000313         4   func ,g         1
+FILE=obj\system.obj
+                                  00000317  00000317         1
+  _Clock_Init
+                                  00000317         1   func ,g         1
+FILE=obj\systeminit.obj
+                                  00000318  0000034d        36
+  _SystemInit
+                                  00000318        2c   func ,g         1
+  _hdwinit
+                                  00000344         a   func ,g         2
+FILE=obj\panel.obj
+                                  0000034e  00000449        fc
+  _panel_init0
+                                  0000034e        11   func ,g         1
+  _panel
+                                  0000035f        eb   func ,g         1
+FILE=obj\digitalio.obj
+                                  0000044a  000004fa        b1
+  _DGOUT_setValue
+                                  0000044a        1c   func ,g         8
+  __CommonCode@1
+                                  00000466         d   func ,l         2
+  _DGIN_Initialize
+                                  00000473        13   func ,g         1
+  __CommonCode@0
+                                  00000486         a   func ,l         2
+  _DGIN_Counter_Clear
+                                  00000490         4   func ,g         1
+  _DGIN_getValue
+                                  00000494        63   func ,g         1
+  _DGIN_Counter
+                                  000004f7         4   func ,g         2
+FILE=obj\counter.obj
+                                  000004fb  000005a3        a9
+  _BCNT_Initialize
+                                  000004fb        16   func ,g         1
+  __CommonCode@0
+                                  00000511         8   func ,l         2
+  _BCNT_Counter_Clear
+                                  00000519         4   func ,g         1
+  _BCNT_Evaluate
+                                  0000051d        83   func ,g         1
+  _BCNT_Counter
+                                  000005a0         4   func ,g         1
+FILE=obj\74hc.obj
+                                  000005a4  00000620        7d
+  _IC_74HC4511_Judge_State
+                                  000005a4        14   func ,g         1
+  _IC_74HC4511_Evaluate
+                                  000005b8        57   func ,g         1
+  _IC74HC4511_Initialize
+                                  0000060f         a   func ,g         1
+  _IC74HC4511_Counter_Clear
+                                  00000619         4   func ,g         1
+  _IC74HC4511_Counter
+                                  0000061d         4   func ,g         1
+
+SECTION=.RLIB
+FILE=memset
+                                  00000621  0000062e         e
+  _memset
+                                  00000621         0   none ,g         3
+
+SECTION=.text_AT10C0
+FILE=obj\opt_byte.obj
+                                  000010c0  000010c3         4
+
+SECTION=.const
+FILE=obj\74hc.obj
+                                  00002000  0000200a         b
+
+SECTION=.bss
+FILE=obj\int.obj
+                                  000ff900  000ff901         2
+  _usgADCR
+                                  000ff900         2   data ,g         1
+FILE=obj\panel.obj
+                                  000ff902  000ff902         1
+  _I_18
+                                  000ff902         1   data ,g         2
+FILE=obj\digitalio.obj
+                                  000ff904  000ff906         3
+  _g_ucDGIN_LastRet
+                                  000ff904         1   data ,g         2
+  _g_ucDGIN_ElapsedTime
+                                  000ff905         1   data ,g         3
+  _g_ucDGIN_Count
+                                  000ff906         1   data ,g         7
+FILE=obj\counter.obj
+                                  000ff908  000ff90b         4
+  _g_ucBCNT_LastCounterVal@1
+                                  000ff908         1   data ,l         3
+  _g_ucBCNT_LastCp0@2
+                                  000ff909         1   data ,l         3
+  _g_ucBCNT_LastCp1@3
+                                  000ff90a         1   data ,l         3
+  _g_ucBCNT_Count@4
+                                  000ff90b         1   data ,l         8
+FILE=obj\74hc.obj
+                                  000ff90c  000ff90c         1
+  _g74HC4511_LastNum
+                                  000ff90c         1   data ,g         3
+
+SECTION=.dataR
+FILE=obj\panel.obj
+                                  000ff90e  000ff91c         f
+  _F0416
+                                  000ff90e         1   data ,g         0
+  _F0614
+                                  000ff90f         1   data ,g         0
+  _F0615
+                                  000ff910         1   data ,g         0
+  _F0617
+                                  000ff911         1   data ,g         2
+  _F0618
+                                  000ff912         1   data ,g         2
+  _F0619
+                                  000ff913         1   data ,g         2
+  _F0620
+                                  000ff914         1   data ,g         2
+  _F0914
+                                  000ff915         1   data ,g         2
+  _F0915
+                                  000ff916         1   data ,g         2
+  _F0916
+                                  000ff917         1   data ,g         2
+  _F0917
+                                  000ff918         1   data ,g         2
+  _F0918
+                                  000ff919         1   data ,g         2
+  _F0919
+                                  000ff91a         1   data ,g         2
+  _F0920
+                                  000ff91b         1   data ,g         2
+  _F1321
+                                  000ff91c         1   data ,g         0
+FILE=obj\74hc.obj
+                                  000ff91e  000ff91e         1
+  _g74HC4511_Count
+                                  000ff91e         1   data ,g         4
+
+SECTION=.stack_bss
+FILE=obj\cstart.obj
+                                  000ff920  000ffb1f       200
+  _stackend
+                                  000ff920         0   none ,l         0
+  _stacktop
+                                  000ffb20         0   none ,l         1
+
+SECTION=.sbss
+FILE=obj\common.obj
+                                  000ffe20  000ffe25         6
+  _fTx0Done
+                                  000ffe20         1   data ,g         0
+  _fTx6Done
+                                  000ffe21         1   data ,g         0
+  _fTm10ms
+                                  000ffe22         1   data ,g         3
+  _fTrg50ms
+                                  000ffe23         1   data ,g         2
+  _fTrg1s
+                                  000ffe24         1   data ,g         2
+  _fTrg10ms
+                                  000ffe25         1   data ,g         3
+FILE=obj\timer.obj
+                                  000ffe26  000ffe28         3
+  _SysTm10ms
+                                  000ffe26         1   data ,g         3
+  _SysTm50ms
+                                  000ffe27         1   data ,g         3
+  _SysTm1s
+                                  000ffe28         1   data ,g         3
+
+Absolute value symbols
+FILE=rlink_generates_03
+  __s.text
+                                  000000ce         0   none ,g         0
+  __e.text
+                                  00000151         0   none ,g         0
+  __s.textf
+                                  00000151         0   none ,g         0
+  __e.textf
+                                  00000621         0   none ,g         0
+  __s.const
+                                  00002000         0   none ,g         0
+  __e.const
+                                  0000200b         0   none ,g         0
+  __s.constf
+                                  00000080         0   none ,g         0
+  __e.constf
+                                  00000080         0   none ,g         0
+  __s.data
+                                  00000082         0   none ,g         0
+  __e.data
+                                  00000093         0   none ,g         0
+  __s.sdata
+                                  00000080         0   none ,g         0
+  __e.sdata
+                                  00000080         0   none ,g         0
+  __s.bss
+                                  000ff900         0   none ,g         0
+  __e.bss
+                                  000ff90d         0   none ,g         0
+  __s.sbss
+                                  000ffe20         0   none ,g         0
+  __e.sbss
+                                  000ffe29         0   none ,g         0
+  __s.dataR
+                                  000ff90e         0   none ,g         0
+  __e.dataR
+                                  000ff91f         0   none ,g         0
+  __s.sdataR
+                                  000ffe2a         0   none ,g         0
+  __e.sdataR
+                                  000ffe2a         0   none ,g         0
+  __s.stack_bss
+                                  000ff920         0   none ,g         0
+  __e.stack_bss
+                                  000ffb20         0   none ,g         0
+  __s.option_byte
+                                  000000c0         0   none ,g         0
+  __e.option_byte
+                                  000000c4         0   none ,g         0
+  __s.text_AT10C0
+                                  000010c0         0   none ,g         0
+  __e.text_AT10C0
+                                  000010c4         0   none ,g         0
+  __s.RLIB
+                                  00000621         0   none ,g         0
+  __e.RLIB
+                                  0000062f         0   none ,g         0
+  __s.security_id
+                                  000000c4         0   none ,g         0
+  __e.security_id
+                                  000000ce         0   none ,g         0
+  __s.vect
+                                  00000000         0   none ,g         0
+  __e.vect
+                                  00000080         0   none ,g         0
+  __RAM_ADDR_START
+                                  000ff900         0   none ,g         0
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         0
+  __STACK_ADDR_START
+                                  000ffe20         0   none ,g         0
+  __STACK_ADDR_END
+                                  000ffb20         0   none ,g         0
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Variable Vector Table List ***
+
+ADDRESS  SYMBOL/ADDRESS
+00       _start
+02       
+04       
+06       
+08       _MD_INTP0
+0a       _MD_INTP1
+0c       _MD_INTP2
+0e       _MD_INTP3
+10       _MD_INTP4
+12       _MD_INTP5
+14       _MD_INTP6
+16       
+18       
+1a       
+1c       
+1e       
+20       _MD_INTTM00
+22       
+24       
+26       
+28       
+2a       
+2c       
+2e       
+30       
+32       
+34       _MD_INTAD
+36       _MD_INTIT
+38       
+3a       
+3c       
+3e       
+40       
+42       
+44       _MD_INTCMP0
+46       _MD_INTCMP1
+48       _MD_INTDOC
+4a       
+4c       
+4e       
+50       
+52       
+54       
+56       
+58       
+5a       
+5c       
+5e       
+60       
+62       
+64       
+66       
+68       
+6a       
+6c       
+6e       
+70       
+72       
+74       
+76       
+78       
+7a       
+7c       
+7e       
+
+*** Cross Reference List ***
+
+No   Unit Name   Global.Symbol   Location External Infomation
+---- ----------- --------------- -------- ---------------------
+0001 cstart
+     SECTION=.text
+                 _start
+                                 000000ce
+                 _exit
+                                 0000011f 0001(00000120:.text)
+     SECTION=.textf
+     SECTION=.const
+     SECTION=.constf
+     SECTION=.data
+     SECTION=.sdata
+     SECTION=.bss
+     SECTION=.sbss
+     SECTION=.dataR
+     SECTION=.sdataR
+     SECTION=.stack_bss
+     SECTION=.dataR
+     SECTION=.sdataR
+0002 opt_byte
+     SECTION=.option_byte
+     SECTION=.text_AT10C0
+0003 main
+     SECTION=.textf
+                 _main
+                                 00000151 0001(0000011b:.text)
+                 _main_loop
+                                 00000159
+0004 common
+     SECTION=.textf
+                 _MOV1_
+                                 00000167
+                 _NOT1_
+                                 00000168
+                 _WAIT
+                                 0000016e
+                 _BitMemGet
+                                 0000017b 0012(000004b5:.textf)
+                                          0013(00000528:.textf)
+                                          0013(00000534:.textf)
+                 _ByteMemGet
+                                 0000019b 0012(000004c1:.textf)
+                                          0013(00000540:.textf)
+                                          0014(000005ca:.textf)
+                 _BitMemSet
+                                 0000019f 0012(0000048d:.textf)
+                                          0013(00000575:.textf)
+                                          0013(00000582:.textf)
+                 _ByteMemSet
+                                 000001dc 0012(00000483:.textf)
+                                          0012(000004f0:.textf)
+                                          0013(0000058e:.textf)
+                                          0014(000005fb:.textf)
+                 _Port_Set
+                                 000001e1 0012(00000463:.textf)
+                 _Port_Get
+                                 00000200 0012(0000049f:.textf)
+     SECTION=.sbss
+                 _fTx0Done
+                                 000ffe20
+                 _fTx6Done
+                                 000ffe21
+                 _fTm10ms
+                                 000ffe22 0005(0000012e:.text)
+                                          0005(00000250:.textf)
+                                          0005(00000271:.textf)
+                 _fTrg50ms
+                                 000ffe23 0005(0000024c:.textf)
+                                          0005(00000262:.textf)
+                 _fTrg1s
+                                 000ffe24 0005(0000024e:.textf)
+                                          0005(0000026f:.textf)
+                 _fTrg10ms
+                                 000ffe25 0005(0000024a:.textf)
+                                          0005(00000255:.textf)
+                                          0011(0000036c:.textf)
+0005 timer
+     SECTION=.text
+                 _MD_INTTM00
+                                 00000121
+     SECTION=.textf
+                 _TM00_Init
+                                 0000020f 0010(00000341:.textf)
+                 _TM_10ms
+                                 00000249 0003(00000162:.textf)
+     SECTION=.sbss
+                 _SysTm10ms
+                                 000ffe26 0005(00000123:.text)
+                                          0005(00000126:.text)
+                                          0005(0000012c:.text)
+                 _SysTm50ms
+                                 000ffe27 0005(00000257:.textf)
+                                          0005(0000025a:.textf)
+                                          0005(00000260:.textf)
+                 _SysTm1s
+                                 000ffe28 0005(00000264:.textf)
+                                          0005(00000267:.textf)
+                                          0005(0000026d:.textf)
+0006 int
+     SECTION=.text
+                 _MD_INTP0
+                                 00000132
+                 _MD_INTP1
+                                 00000134
+                 _MD_INTP2
+                                 00000136
+                 _MD_INTP3
+                                 00000138
+                 _MD_INTP4
+                                 0000013a
+                 _MD_INTP5
+                                 0000013c
+                 _MD_INTP6
+                                 0000013e
+                 _MD_INTAD
+                                 00000140
+                 _MD_INTCMP0
+                                 00000149
+                 _MD_INTCMP1
+                                 0000014b
+                 _MD_INTDOC
+                                 0000014d
+                 _MD_INTIT
+                                 0000014f
+     SECTION=.textf
+                 _INT_Init
+                                 00000276 0010(0000033d:.textf)
+     SECTION=.bss
+                 _usgADCR
+                                 000ff900 0006(00000144:.text)
+0007 port
+     SECTION=.textf
+                 _PORT_Init
+                                 000002cb 0010(00000335:.textf)
+0008 watchdogtimer
+     SECTION=.textf
+                 _WDT_Init
+                                 00000312 0010(00000339:.textf)
+                 _WDT_Reset
+                                 00000313 0003(0000015e:.textf)
+0009 system
+     SECTION=.textf
+                 _Clock_Init
+                                 00000317 0010(00000331:.textf)
+0010 systeminit
+     SECTION=.textf
+                 _SystemInit
+                                 00000318 0010(00000348:.textf)
+                 _hdwinit
+                                 00000344 0001(000000d3:.text)
+                                          0003(00000152:.textf)
+0011 panel
+     SECTION=.textf
+                 _panel_init0
+                                 0000034e 0003(00000156:.textf)
+                 _panel
+                                 0000035f 0003(0000015a:.textf)
+     SECTION=.bss
+                 _I_18
+                                 000ff902 0011(00000377:.textf)
+                                          0011(0000037e:.textf)
+     SECTION=.dataR
+                 _F0416
+                                 000ff90e
+                 _F0614
+                                 000ff90f
+                 _F0615
+                                 000ff910
+                 _F0617
+                                 000ff911 0011(0000038b:.textf)
+                                          0011(000003bb:.textf)
+                 _F0618
+                                 000ff912 0011(00000393:.textf)
+                                          0011(000003b8:.textf)
+                 _F0619
+                                 000ff913 0011(0000039b:.textf)
+                                          0011(000003b5:.textf)
+                 _F0620
+                                 000ff914 0011(000003a3:.textf)
+                                          0011(000003b1:.textf)
+                 _F0914
+                                 000ff915 0011(000003c6:.textf)
+                                          0011(000003fd:.textf)
+                 _F0915
+                                 000ff916 0011(000003ce:.textf)
+                                          0011(00000407:.textf)
+                 _F0916
+                                 000ff917 0011(000003d6:.textf)
+                                          0011(00000411:.textf)
+                 _F0917
+                                 000ff918 0011(000003de:.textf)
+                                          0011(0000041b:.textf)
+                 _F0918
+                                 000ff919 0011(000003e6:.textf)
+                                          0011(00000425:.textf)
+                 _F0919
+                                 000ff91a 0011(000003ee:.textf)
+                                          0011(0000042f:.textf)
+                 _F0920
+                                 000ff91b 0011(000003f6:.textf)
+                                          0011(00000439:.textf)
+                 _F1321
+                                 000ff91c
+     SECTION=.data
+0012 digitalio
+     SECTION=.textf
+                 _DGOUT_setValue
+                                 0000044a 0011(00000403:.textf)
+                                          0011(0000040d:.textf)
+                                          0011(00000417:.textf)
+                                          0011(00000421:.textf)
+                                          0011(0000042b:.textf)
+                                          0011(00000435:.textf)
+                                          0011(0000043f:.textf)
+                                          0011(00000447:.textf)
+                 _DGIN_Initialize
+                                 00000473 0011(00000350:.textf)
+                 _DGIN_Counter_Clear
+                                 00000490 0011(00000360:.textf)
+                 _DGIN_getValue
+                                 00000494 0011(0000036f:.textf)
+                 _DGIN_Counter
+                                 000004f7 0011(00000354:.textf)
+                                          0011(0000037a:.textf)
+     SECTION=.bss
+                 _g_ucDGIN_LastRet
+                                 000ff904 0012(0000048a:.textf)
+                                          0012(000004b2:.textf)
+                 _g_ucDGIN_ElapsedTime
+                                 000ff905 0012(00000480:.textf)
+                                          0012(000004be:.textf)
+                                          0012(000004ed:.textf)
+                 _g_ucDGIN_Count
+                                 000ff906 0012(0000047c:.textf)
+                                          0012(00000487:.textf)
+                                          0012(00000491:.textf)
+                                          0012(000004af:.textf)
+                                          0012(000004bb:.textf)
+                                          0012(000004ea:.textf)
+                                          0012(000004f8:.textf)
+0013 counter
+     SECTION=.textf
+                 _BCNT_Initialize
+                                 000004fb 0011(00000358:.textf)
+                 _BCNT_Counter_Clear
+                                 00000519 0011(00000364:.textf)
+                 _BCNT_Evaluate
+                                 0000051d 0011(00000384:.textf)
+                 _BCNT_Counter
+                                 000005a0 0011(000003a6:.textf)
+     SECTION=.bss
+0014 74hc
+     SECTION=.textf
+                 _IC_74HC4511_Judge_State
+                                 000005a4 0011(000003ac:.textf)
+                 _IC_74HC4511_Evaluate
+                                 000005b8 0011(000003bf:.textf)
+                 _IC74HC4511_Initialize
+                                 0000060f 0011(0000035c:.textf)
+                 _IC74HC4511_Counter_Clear
+                                 00000619 0011(00000368:.textf)
+                 _IC74HC4511_Counter
+                                 0000061d 0011(000003f9:.textf)
+     SECTION=.bss
+                 _g74HC4511_LastNum
+                                 000ff90c 0014(000005c7:.textf)
+                                          0014(000005f8:.textf)
+                                          0014(00000613:.textf)
+     SECTION=.dataR
+                 _g74HC4511_Count
+                                 000ff91e 0014(000005c4:.textf)
+                                          0014(000005f5:.textf)
+                                          0014(0000061a:.textf)
+                                          0014(0000061e:.textf)
+     SECTION=.const
+     SECTION=.data
+0015 memset
+     SECTION=.RLIB
+                 _memset
+                                 00000621 0013(0000050e:.textf)
+                                          0013(00000512:.textf)
+                                          0014(00000616:.textf)
+0016 rlink_generates_01
+     SECTION=.security_id
+0017 rlink_generates_02
+     SECTION=.vect
+0018 rlink_generates_03
+     SECTION=
+                 __s.vect
+                                 00000000
+                 __s.constf
+                                 00000080
+                 __e.constf
+                                 00000080
+                 __s.sdata
+                                 00000080
+                 __e.sdata
+                                 00000080
+                 __e.vect
+                                 00000080
+                 __s.data
+                                 00000082
+                 __e.data
+                                 00000093
+                 __s.option_byte
+                                 000000c0
+                 __e.option_byte
+                                 000000c4
+                 __s.security_id
+                                 000000c4
+                 __s.text
+                                 000000ce
+                 __e.security_id
+                                 000000ce
+                 __e.text
+                                 00000151
+                 __s.textf
+                                 00000151
+                 __e.textf
+                                 00000621
+                 __s.RLIB
+                                 00000621
+                 __e.RLIB
+                                 0000062f
+                 __s.text_AT10C0
+                                 000010c0
+                 __e.text_AT10C0
+                                 000010c4
+                 __s.const
+                                 00002000
+                 __e.const
+                                 0000200b
+                 __s.bss
+                                 000ff900
+                 __RAM_ADDR_START
+                                 000ff900
+                 __e.bss
+                                 000ff90d
+                 __s.dataR
+                                 000ff90e
+                 __e.dataR
+                                 000ff91f
+                 __s.stack_bss
+                                 000ff920
+                 __e.stack_bss
+                                 000ffb20
+                 __STACK_ADDR_END
+                                 000ffb20
+                 __s.sbss
+                                 000ffe20
+                 __STACK_ADDR_START
+                                 000ffe20
+                 __e.sbss
+                                 000ffe29
+                 __s.sdataR
+                                 000ffe2a
+                 __e.sdataR
+                                 000ffe2a
+                 __RAM_ADDR_END
+                                 000ffee0
