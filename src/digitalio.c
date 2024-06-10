@@ -58,7 +58,6 @@ Exported global variables and functions (to be accessed by other files)
 UCHAR g_ucDGIN_LastRet[(DGIN_USED / 8) + 1];
 UCHAR g_ucDGIN_ElapsedTime[ DGIN_USED ];
 UCHAR g_ucDGIN_Count;
-
 #endif /* end of defined DGIN_USED */
 
 /*******************************************************************************
@@ -124,7 +123,7 @@ void DGIN_Counter_Clear( void )
 *                Trig     ...Count trigger(Fix 10ms)
 * Return Value : Input value
 ********************************************************************************/
-UCHAR DGIN_getValue( UCHAR Port, UCHAR Value, UCHAR Trig )/*0, 0, 0 or 1*/
+UCHAR DGIN_getValue( UCHAR Port, UCHAR Value, UCHAR Trig )
 {
 
 	UCHAR	ucInputValue;	/* Input value of specified port */
@@ -185,5 +184,4 @@ void DGIN_Counter( void )
 	/* "Count value of DGIN panel" <- "Count value of DGIN panel" + 1 */
 	g_ucDGIN_Count++;
 }
-
 #endif /* end of defined DGIN_USED */

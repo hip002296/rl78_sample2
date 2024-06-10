@@ -1,6 +1,10 @@
 ****src\systeminit.c
 v2 
+<<<<<<< HEAD
 :1717977881
+=======
+:1717477811
+>>>>>>> a5f1ccd625894546d7e4e3ab0fc9a3d5eefde582
 #1
 F "__DI" N I!1 T!2 ?18-2 109-1 
 T "void" KBV I!2 0x0 
@@ -184,6 +188,7 @@ F "WDT_Reset" F I!179 T!2 ?57-11
 F "SystemInit" F I!180 T!2 #72-1 !73,99-1-1 110-1 
 ****%CxSystemPath%\inc\builtin.h
 v2 
+<<<<<<< HEAD
 :1717977881
 #2
 ****include\sfr.h
@@ -221,4 +226,43 @@ v2
 ****include\watchdogtimer.h
 v2 
 :1717977881
+=======
+:1717477811
+#2
+****include\sfr.h
+v2 
+:1717477811
+#3
+****include\iodefine.h
+v2 
+:1717477811
+#4
+****include\common.h
+v2 
+:1717477811
+#5
+****include\config.h
+v2 
+:1717477811
+#6
+****include\system.h
+v2 
+:1717477811
+#7
+****include\int.h
+v2 
+:1717477811
+#8
+****include\port.h
+v2 
+:1717477811
+#9
+****include\timer.h
+v2 
+:1717477811
+#10
+****include\watchdogtimer.h
+v2 
+:1717477811
+>>>>>>> a5f1ccd625894546d7e4e3ab0fc9a3d5eefde582
 #11

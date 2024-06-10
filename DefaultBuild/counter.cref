@@ -1,6 +1,10 @@
 ****src\counter.c
 v2 
+<<<<<<< HEAD
 :1717977883
+=======
+:1717477812
+>>>>>>> a5f1ccd625894546d7e4e3ab0fc9a3d5eefde582
 #1
 F "__DI" N I!1 T!2 ?18-2 
 T "void" KBV I!2 0x0 
@@ -142,11 +146,19 @@ V "" N I!137 O!134 T!113 .1 0x1
 F "ByteMemGet" F I!138 T!113 ?226-5 214-1 P!139 P!140 
 V "" N I!139 O!138 T!136 .2 0x2 
 V "" N I!140 O!138 T!113 .1 0x1 
+<<<<<<< HEAD
 F "BitMemSet" F I!141 T!2 ?227-5 249-1 252-1 P!142 P!143 P!144 
 V "" N I!142 O!141 T!136 .2 0x2 
 V "" N I!143 O!141 T!113 .1 0x1 
 V "" N I!144 O!141 T!113 .1 0x1 
 F "ByteMemSet" F I!145 T!2 ?228-5 255-1 P!146 P!147 P!148 
+=======
+F "BitMemSet" F I!141 T!2 ?227-5 247-1 250-1 P!142 P!143 P!144 
+V "" N I!142 O!141 T!136 .2 0x2 
+V "" N I!143 O!141 T!113 .1 0x1 
+V "" N I!144 O!141 T!113 .1 0x1 
+F "ByteMemSet" F I!145 T!2 ?228-5 253-1 P!146 P!147 P!148 
+>>>>>>> a5f1ccd625894546d7e4e3ab0fc9a3d5eefde582
 V "" N I!146 O!145 T!136 .2 0x2 
 V "" N I!147 O!145 T!113 .1 0x1 
 V "" N I!148 O!145 T!113 .1 0x1 
@@ -311,6 +323,7 @@ F "CNT_Counter_Clear" F I!306 T!2 ?132-9
 F "CNT_Counter" F I!307 T!2 ?133-9 
 F "BCNT_Initialize" F I!308 T!2 #168-1 !169,178-1-1 ?135-9 
 F "BCNT_Counter_Clear" F I!309 T!2 #186-1 !187,190-1-1 ?136-9 
+<<<<<<< HEAD
 F "BCNT_Evaluate" F I!310 T!113 #201-1 !202,259-1-1 ?137-9 P!329 P!330 P!331 P!332 
 F "BCNT_Counter" F I!315 T!2 #267-1 !268,271-1-1 ?138-9 
 F "dotstate" F I!316 T!113 #273-1 !274,280-1-1 ?139-9 
@@ -360,4 +373,53 @@ v2
 ****include\counter.h
 v2 
 :1717977883
+=======
+F "BCNT_Evaluate" F I!310 T!113 #201-1 !202,257-1-1 ?137-9 P!327 P!328 P!329 P!330 
+F "BCNT_Counter" F I!315 T!2 #265-1 !266,269-1-1 ?138-9 
+V "g_ucBCNT_LastCounterVal" GSN I!316 T!317 !69-1 171-1 214-1 253-1 .1 0x1 
+T "" KA1 I!317 T!113 0x1 
+V "g_ucBCNT_LastCp0" GSN I!318 T!319 !70-1 174-1 208-1 247-1 .1 0x1 
+T "" KA1 I!319 T!113 0x1 
+V "g_ucBCNT_LastCp1" GSN I!320 T!321 !71-1 177-1 211-1 250-1 .1 0x1 
+T "" KA1 I!321 T!113 0x1 
+V "g_ucBCNT_Count" GSN I!322 T!113 !72-1 #189-1 #268-1 208-1 211-1 214-1 247-1 250-1 253-1 268-1 .1 0x1 
+V "mr" N I!327 O!310 T!113 !201-1 216-1 .1 0x1 
+V "cp0" N I!328 O!310 T!113 !201-1 217-1 247-1 .1 0x1 
+V "cp1" N I!329 O!310 T!113 !201-1 218-1 227-1 250-1 .1 0x1 
+V "max" N I!330 O!310 T!113 !201-1 241-1 .1 0x1 
+V "lastcp0" N I!331 O!310 T!113 !203-1 #208-1 226-1 .1 0x1 
+V "lastcp1" N I!332 O!310 T!113 !204-1 #211-1 219-1 .1 0x1 
+V "count" N I!333 O!310 T!113 !205-1 #214-1 #221-1 #229-1 #237-1 #243-1 221-1 229-1 241-1 253-1 256-1 .1 0x1 
+****%CxSystemPath%\inc\builtin.h
+v2 
+:1717477812
+#2
+****include\sfr.h
+v2 
+:1717477812
+#3
+****include\iodefine.h
+v2 
+:1717477812
+#4
+****include\common.h
+v2 
+:1717477812
+#5
+****include\config.h
+v2 
+:1717477812
+#6
+****%CxSystemPath%\inc\string.h
+v2 
+:1717477812
+#7
+****%CxSystemPath%\inc\stddef.h
+v2 
+:1717477812
+#8
+****include\counter.h
+v2 
+:1717477812
+>>>>>>> a5f1ccd625894546d7e4e3ab0fc9a3d5eefde582
 #9

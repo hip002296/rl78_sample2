@@ -279,11 +279,11 @@ Macro definitions
 							a_out, b_out, c_out, d_out, e_out, f_out, g_out)	\
 {																				\
 	{																			\
-			UCHAR	State;/*状態*/	/*毎回同じ*/													\
-			UCHAR	ucSeg;/*セグメント*/														\
+			UCHAR	State;														\
+			UCHAR	ucSeg;														\
 																				\
-			State = IC_74HC4511_Judge_State(LE_in, BI_in, LT_in);/*数値表示状態(毎回)*/	/*0*/				\
-			ucSeg = IC_74HC4511_Evaluate(State, A_in, B_in, C_in, D_in);/*BCD-to-7-Segment Latch/Decoder/Driver*/		\
+			State = IC_74HC4511_Judge_State(LE_in, BI_in, LT_in);				\
+			ucSeg = IC_74HC4511_Evaluate(State, A_in, B_in, C_in, D_in);		\
 			a_out = (ucSeg>>7) & 0x01;											\
 			b_out = (ucSeg>>6) & 0x01;											\
 			c_out = (ucSeg>>5) & 0x01;											\

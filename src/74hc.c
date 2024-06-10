@@ -738,7 +738,7 @@ void IC74HC77_Counter( void )
 *                    2:All Turning Off
 *                    3:Display Continuance
 ********************************************************************************/
-UCHAR  IC_74HC4511_Judge_State( UCHAR LE_in, UCHAR BI_in, UCHAR LT_in )/*fOFF, fON, fON*/
+UCHAR  IC_74HC4511_Judge_State( UCHAR LE_in, UCHAR BI_in, UCHAR LT_in )
 {
 	UCHAR	state;
 
@@ -770,11 +770,11 @@ UCHAR  IC_74HC4511_Judge_State( UCHAR LE_in, UCHAR BI_in, UCHAR LT_in )/*fOFF, f
 * Return Value : Numerical value that input value shows	(0-10)
 *                (Ten is set in case of ten or more)
 ********************************************************************************/
-UCHAR  IC_74HC4511_Evaluate( UCHAR State, UCHAR A_in, UCHAR B_in, UCHAR C_in, UCHAR D_in )/*0, A, B, C, D*/
+UCHAR  IC_74HC4511_Evaluate( UCHAR State, UCHAR A_in, UCHAR B_in, UCHAR C_in, UCHAR D_in )
 {
 	/*							   abcdefgh		*/
 	UCHAR ucRet[11] =  { 0b11111100, 0b01100000, 0b11011010, 0b11110010, 0b01100110,
-							     0b10110110, 0b10111110, 0b11100000, 0b11111110, 0b11100110, 0b00000000 };
+							     0b10110110, 0b00111110, 0b11100000, 0b11111110, 0b11100110, 0b00000000 };
 	UCHAR	ucValue;
 	
 	switch(State)

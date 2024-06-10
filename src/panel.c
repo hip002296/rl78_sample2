@@ -79,30 +79,21 @@ void panel_init0(void)
 void panel(void)
 {
 	UCHAR flag;
-				//たぶん下3つのカウンターはpanel関数が始まると0になり、終わると1になる
-	DGIN_INIT; 		//g_ucDGIN_Count = 0;	//たぶん入力信号
-	BCNT_INIT;		//g_ucBCNT_Count = 0;	//バイナリーカウンター?
-	IC74HC4511_INIT;	//g74HC4511_Count = 0;
+	DGIN_INIT;
+	BCNT_INIT;
+	IC74HC4511_INIT;
 	
 	flag = dotstate();
 
-	DGIN_PROC( I_18,0, LOW,0,fTrg10ms);//I_18に0 or 1が入る?	//fTrg10ms(使わないもの?)が引数にあるため意味ない可能性あり?
+	DGIN_PROC( I_18,0, LOW,0,fTrg10ms);
 	BCNT_PROC( 9,fOFF,fOFF,I_18,F0617,F0618,F0619,F0620 );
-	
-	//IC74HC4511_PROC関数にて、BCNT_PROC関数に渡した引数とDGOUT_PROCに渡すものを引数にしている
-	//最初の引数fOFF,fON,fONでパネルの状態を数値表示状態にする
-	//中央の引数F0617,F0618,F0619,F0620で入力信号をみる
-	//最後の引数F0914,F0915,F0916,F0917,F0918,F0919,F0920で入力に対応する数字を出力する
-	IC74HC4511_PROC( fOFF,fON,fON,F0617,F0618,F0619,F0620,F0914,F0915,F0916,F0917,F0918,F0919,F0920 );	//ここで数字をうまいことやってる?
-	
-	//DGOUT_setValue関数	//これ以降では受け取った数値を表示する
-	DGOUT_PROC( 30, F0914, HIGH );//上の横棒
-	DGOUT_PROC( 31, F0915, HIGH );//右上縦棒
-	DGOUT_PROC( 32, F0916, HIGH );//右下縦棒
-	DGOUT_PROC( 33, F0917, HIGH );//下の横棒
-	DGOUT_PROC( 51, F0918, HIGH );//左下縦棒
-	DGOUT_PROC( 52, F0919, HIGH );//左上縦棒
-	DGOUT_PROC( 53, F0920, HIGH );//中央横棒
-	DGOUT_PROC( 54, flag, HIGH );//右下の点		//これに条件付け加える
+	IC74HC4511_PROC( fOFF,fON,fON,F0617,F0618,F0619,F0620,F0914,F0915,F0916,F0917,F0918,F0919,F0920 );
+	DGOUT_PROC( 30, F0914, HIGH );
+	DGOUT_PROC( 31, F0915, HIGH );
+	DGOUT_PROC( 32, F0916, HIGH );
+	DGOUT_PROC( 33, F0917, HIGH );
+	DGOUT_PROC( 51, F0918, HIGH );
+	DGOUT_PROC( 52, F0919, HIGH );
+	DGOUT_PROC( 53, F0920, HIGH );
+	DGOUT_PROC( 54, flag, HIGH );
 }
-

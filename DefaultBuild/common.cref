@@ -1,6 +1,10 @@
 ****src\common.c
 v2 
+<<<<<<< HEAD
 :1717977878
+=======
+:1717477808
+>>>>>>> a5f1ccd625894546d7e4e3ab0fc9a3d5eefde582
 #1
 F "__DI" N I!1 T!2 ?18-2 
 T "void" KBV I!2 0x0 
@@ -181,6 +185,7 @@ V "ucport" N I!212 O!153 T!113 !216-1 #221-1 222-1 .1 0x1
 V "ucret" N I!213 O!153 T!113 !217-1 #222-1 224-1 .1 0x1 
 ****%CxSystemPath%\inc\builtin.h
 v2 
+<<<<<<< HEAD
 :1717977878
 #2
 ****include\sfr.h
@@ -194,4 +199,19 @@ v2
 ****include\common.h
 v2 
 :1717977878
+=======
+:1717477808
+#2
+****include\sfr.h
+v2 
+:1717477808
+#3
+****include\iodefine.h
+v2 
+:1717477808
+#4
+****include\common.h
+v2 
+:1717477808
+>>>>>>> a5f1ccd625894546d7e4e3ab0fc9a3d5eefde582
 #5

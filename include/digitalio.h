@@ -68,11 +68,11 @@ Macro definitions
 /*******************************************************************************
 ** DGIN_PROC	
 ********************************************************************************/
-#define DGIN_PROC(Fout, Port, Active, Value, Trig)/*( I_18,0, LOW,0,fTrg10ms)*/								\
+#define DGIN_PROC(Fout, Port, Active, Value, Trig)								\
 {																				\
 	{																			\
 		UCHAR ucret;															\
-		ucret = DGIN_getValue(Port, Value/10, (UCHAR)Trig);/*0, 0, fTrg10ms*/						\
+		ucret = DGIN_getValue(Port, Value/10, (UCHAR)Trig);						\
 		if (Active == 1) {														\
 			Fout = ucret & 0x01;												\
 		}																		\

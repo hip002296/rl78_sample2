@@ -198,7 +198,7 @@ void BCNT_Counter_Clear( void )
 *                maximum value
 * Return Value : Count value of binary counter
 ********************************************************************************/
-UCHAR BCNT_Evaluate( UCHAR mr, UCHAR cp0, UCHAR cp1, UCHAR max )/*fOFF, fOFF, I_18, 9*/
+UCHAR BCNT_Evaluate( UCHAR mr, UCHAR cp0, UCHAR cp1, UCHAR max )
 {
 	UCHAR	lastcp0;	/* Last input value of cp0 terminal */
 	UCHAR	lastcp1;	/* Last input value of cp1 terminal */
@@ -272,6 +272,9 @@ void BCNT_Counter( void )
 
 UCHAR dotstate(void)
 {
+	if(switch_count >= 20){
+		switch_count = 0;
+	}
 	if(switch_count < 10){
 		return fOFF;
 	} else {

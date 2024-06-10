@@ -1,6 +1,10 @@
 ****src\int.c
 v2 
+<<<<<<< HEAD
 :1717977879
+=======
+:1717477809
+>>>>>>> a5f1ccd625894546d7e4e3ab0fc9a3d5eefde582
 #1
 F "__DI" N I!1 T!2 ?18-2 
 T "void" KBV I!2 0x0 
@@ -178,6 +182,7 @@ F "MD_INTAD" FI I!173 T!2 #192-1 !196,198-1-1
 F "MD_INTDOC" FI I!174 T!2 #235-1 !239,240-1-1 
 ****%CxSystemPath%\inc\builtin.h
 v2 
+<<<<<<< HEAD
 :1717977879
 #2
 ****include\sfr.h
@@ -199,4 +204,27 @@ v2
 ****include\int.h
 v2 
 :1717977879
+=======
+:1717477809
+#2
+****include\sfr.h
+v2 
+:1717477809
+#3
+****include\iodefine.h
+v2 
+:1717477809
+#4
+****include\common.h
+v2 
+:1717477809
+#5
+****include\config.h
+v2 
+:1717477809
+#6
+****include\int.h
+v2 
+:1717477809
+>>>>>>> a5f1ccd625894546d7e4e3ab0fc9a3d5eefde582
 #7

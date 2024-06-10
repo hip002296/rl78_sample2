@@ -1,8 +1,8 @@
 品質記録情報
-2024年6月10日 9:04:46
+2024年6月10日 9:39:24
 
 ------ ビルド開始(RL78_Sample2, DefaultBuild) ------
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\main.c src\common.c src\timer.c src\int.c src\port.c src\watchdogtimer.c src\system.c src\systeminit.c src\panel.c src\digitalio.c src\counter.c src\74hc.c -cpu=S3 -cref=DefaultBuild -obj_path=DefaultBuild "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF" -g -g_line -Osize -I include -c -msg_lang=japanese
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\main.c src\common.c src\timer.c src\int.c src\port.c src\watchdogtimer.c src\system.c src\systeminit.c src\panel.c src\digitalio.c src\counter.c src\74hc.c -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF" -g -g_line -Osize -I include -c -msg_lang=japanese
 W0511186:CC-RL V1のオプション"-Osize"の評価期間は残り46日です。評価期間経過後は、暗黙に"-Olite"指定に変更されます。引き続き"-Osize"を利用したい場合は製品の購入をご検討ください。
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\cstart.asm src\opt_byte.asm -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF" -g -c -msg_lang=japanese
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\rlink.exe -subcommand=DefaultBuild\RL78_Sample2.clnk
@@ -54,8 +54,8 @@ DefaultBuild\RL78_Sample2.clnk :
 
 
 --- SHA1 hash value of output files ---
-C:\Users\r_taniguchi\Desktop\組込み演習\実習\236\rl78_sample2\DefaultBuild\RL78_Sample2.abs: ea63b64c117109bb21f02e6fad3d98253f64a1cc
-C:\Users\r_taniguchi\Desktop\組込み演習\実習\236\rl78_sample2\DefaultBuild\RL78_Sample2.hex: 77e71c87972f61e956198def389f6f601e352fb7
+C:\Users\r_taniguchi\Desktop\組込み演習\実習\236\rl78_sample2\DefaultBuild\RL78_Sample2.abs: bcbb24a56e1628794540d6e6c6da88bd0a2f0352
+C:\Users\r_taniguchi\Desktop\組込み演習\実習\236\rl78_sample2\DefaultBuild\RL78_Sample2.hex: 0868988fd7ded01c2f2a5d75b54f5511396f28ad
 
 
 --- システム情報 ---
@@ -81,13 +81,13 @@ C:\Users\r_taniguchi\Desktop\組込み演習\実習\236\rl78_sample2\DefaultBuil
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *メモリ使用量
  *プライベート・ワーキング・セット
-  227 MB
+  365 MB
  *GDIオブジェクト数
-  2152
+  2156
  *USERオブジェクト数
-  1066
+  1693
  *開いているファイル
-  6 editors, 6 files, 76 KB
+  5 editors, 5 files, 32 KB
 
 --- ビルド・ツール・プラグイン情報 ---
 RH850ビルド・ツールCC-RH用プラグイン
@@ -243,8 +243,6 @@ C:\Users\r_taniguchi\Desktop\組込み演習\実習\236\rl78_sample2\RL78_Sample
   
  * SMS Assemblerのバージョン
    V1.00.00.01 [29 May 2020]
- * GREEN_DSP Structured Assembler のバージョン
-   V1.05.00
  
 
 デバッグ・ツール情報
